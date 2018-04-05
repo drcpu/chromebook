@@ -1,5 +1,11 @@
 # Welcome to my Chromebook Joourney!
 
+Current setup environment (as reported by chrx):
+* Model:       ASUS Chromebook C213NA
+* Released:    2017
+* CPU Family:  Intel Apollo Lake
+
+
 Using Mr.Chromebox to set the legacy boot (RW_LEGACY or SeaBIOS):
 
 `cd; curl -LO https://mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh`

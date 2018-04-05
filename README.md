@@ -43,6 +43,7 @@ Currently, there does not seem to be a way to successfully suspend.  Therefore, 
 * [GalliumOS Linux](https://galliumos.org/)
 * [GalliumOS on Edgar](https://gist.github.com/stupidpupil/1e88638e5240476ec1f77d4b27747c88)
 * [Suspend bug](https://bugs.chromium.org/p/chromium/issues/detail?id=221905)
+* [GalliumOS Bug for suspend](https://github.com/GalliumOS/galliumos-distro/issues/268)
 * [Issues related to suspend](https://github.com/GalliumOS/galliumos-distro/issues/198)
 * [Potential fix for Ubuntu for suspend](https://askubuntu.com/questions/110398/computer-turns-off-instead-of-suspending-sleeping)
 * [Restoring legacy boot](http://jrs-s.net/2014/04/01/restoring-legacy-boot-linux-boot-on-a-chromebook/)

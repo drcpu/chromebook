@@ -8,6 +8,10 @@ Using chrx to resize partition:
 
 `cd ; curl -Os https://chrx.org/go && sh go`
 
+To install GalliumOS:
+
+`cd ; curl -Os https://chrx.org/go && sh go -d galliumos -H hostname -U username -p admin-misc
+
 ### Sleep/Suspend Mode
 If Chromebook enters sleep/suspend mode, there will be issues with the legacy boot.  CTRL-L will only beep and not let you boot via legacy boot:
 
@@ -27,3 +31,4 @@ After, reboot and CTRL-L will now successfully let you boot via legacy boot (e.g
 * https://gist.github.com/stupidpupil/1e88638e5240476ec1f77d4b27747c88
 * https://mrchromebox.tech/#fwscript
 * https://chrx.org/
+* https://galliumos.org/

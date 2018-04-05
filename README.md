@@ -26,9 +26,9 @@ If Chromebook enters sleep/suspend mode, there will be issues with the legacy bo
 After, reboot and CTRL-L will now successfully let you boot via legacy boot (e.g., boot into the installed Linux if dual booting).
 
 ### Useful links:
-* [Mr.Chromebox Firmware Script] (https://mrchromebox.tech/#fwscript)
-* [chrx] (https://chrx.org/)
-* [GalliumOS] (https://galliumos.org/)
-* [GalliumOS on Edgar] (https://gist.github.com/stupidpupil/1e88638e5240476ec1f77d4b27747c88)
-* [Suspend bug] (https://bugs.chromium.org/p/chromium/issues/detail?id=221905)
-* [Restoring legacy boot] (http://jrs-s.net/2014/04/01/restoring-legacy-boot-linux-boot-on-a-chromebook/)
+* [Mr.Chromebox Firmware Script](https://mrchromebox.tech/#fwscript)
+* [chrx](https://chrx.org/)
+* [GalliumOS Linux](https://galliumos.org/)
+* [GalliumOS on Edgar](https://gist.github.com/stupidpupil/1e88638e5240476ec1f77d4b27747c88)
+* [Suspend bug](https://bugs.chromium.org/p/chromium/issues/detail?id=221905)
+* [Restoring legacy boot](http://jrs-s.net/2014/04/01/restoring-legacy-boot-linux-boot-on-a-chromebook/)

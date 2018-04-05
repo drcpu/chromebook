@@ -5,25 +5,24 @@ Current setup environment (as reported by chrx):
 * Released:    2017
 * CPU Family:  Intel Apollo Lake
 
-
-Using Mr.Chromebox to set the legacy boot (RW_LEGACY or SeaBIOS):
+Using Mr.Chromebox to set the legacy boot (**RW_LEGACY** or SeaBIOS):
 
 `cd; curl -LO https://mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh`
 
-Using chrx to resize partition:
+Using **chrx** to resize partition:
 
 `cd ; curl -Os https://chrx.org/go && sh go`
 
-To install GalliumOS:
+To install GalliumOS Linux:
 
-`cd ; curl -Os https://chrx.org/go && sh go -d galliumos -H hostname -U username -p admin-misc
+`cd ; curl -Os https://chrx.org/go && sh go -d galliumos -H hostname -U username -p admin-misc`
 
 ### Sleep/Suspend Mode
-If Chromebook enters sleep/suspend mode, there will be issues with the legacy boot.  CTRL-L will only beep and not let you boot via legacy boot.  To fix the legacy BIOS from crosh:
+If Chromebook enters sleep/suspend mode, there will be issues with the legacy boot.  **CTRL-L** will only beep and not let you boot via legacy boot.  To fix the legacy BIOS, boot back into ChromeOS (**CTRL-D**) and use **crosh**:
 
 `sudo crossystem dev_boot_usb=1 dev_boot_legacy=1`
 
-After, reboot and CTRL-L will now successfully let you boot via legacy boot (e.g., boot into the installed Linux if dual booting).
+After, reboot and **CTRL-L** will now successfully let you boot via legacy boot (e.g., boot into the installed Linux if dual booting).
 
 ### Useful links:
 * [Mr.Chromebox Firmware Script](https://mrchromebox.tech/#fwscript)

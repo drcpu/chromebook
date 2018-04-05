@@ -44,7 +44,7 @@ Currently, there does not seem to be a way to successfully suspend.  Therefore, 
 * [GalliumOS on Edgar](https://gist.github.com/stupidpupil/1e88638e5240476ec1f77d4b27747c88)
 * [Suspend bug](https://bugs.chromium.org/p/chromium/issues/detail?id=221905)
 * [GalliumOS Bug for suspend](https://github.com/GalliumOS/galliumos-distro/issues/268)
-* [GalliumOS to do list includes suspend/resume functionality](https://github.com/GalliumOS/galliumos-distro/issues/364)
+* [GalliumOS to do list includes suspend/resume functionality for Apoolo Lake platform](https://github.com/GalliumOS/galliumos-distro/issues/364)
 * [Issues related to suspend](https://github.com/GalliumOS/galliumos-distro/issues/198)
 * [Potential fix for Ubuntu for suspend](https://askubuntu.com/questions/110398/computer-turns-off-instead-of-suspending-sleeping)
 * [Restoring legacy boot](http://jrs-s.net/2014/04/01/restoring-legacy-boot-linux-boot-on-a-chromebook/)

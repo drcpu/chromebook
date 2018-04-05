@@ -1,4 +1,4 @@
-# Welcome to my Chromebook Joourney!
+# Welcome to my Chromebook Journey!
 
 Current setup environment (as reported by chrx):
 * Model:       ASUS Chromebook C213NA

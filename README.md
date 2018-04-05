@@ -17,9 +17,14 @@ Using **chrx** to resize partition:
 
 `cd ; curl -Os https://chrx.org/go && sh go`
 
-To install GalliumOS Linux:
+To install GalliumOS (latest, e.g., GalliumOS 2.2) Linux:
 
 `cd ; curl -Os https://chrx.org/go && sh go -d galliumos -H hostname -U username -p admin-misc`
+
+To install GalliumOS 2.1 Linux:
+
+`cd ; curl -Os https://chrx.org/go && sh go -d galliumos -r 2.1 -H hostname -U username -p admin-misc`
+
 
 ### Sleep/Suspend Mode
 If Chromebook enters sleep/suspend mode, there will be issues with the legacy boot.  **CTRL-L** will only beep and not let you boot via legacy boot.  To fix the legacy BIOS, boot back into ChromeOS (**CTRL-D**) and use **crosh**:

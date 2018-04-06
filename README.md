@@ -7,8 +7,19 @@ Current setup environment (as reported by chrx):
 
 Before you begin, please backup your data as this will wipeout your data.
 
-Enable Developer Mode.
+### Developer Mode
+Developer Mode is required for a few of the steps outlined here (e.g., install crouton or even run chrx and Mr.Chromebox's firmware script).
 
+## Install Crouton
+...
+...
+...
+
+
+## Install and Run Linux via Dual-Boot
+
+
+### Legacy BIOS (SeaBIOS)
 Using Mr.Chromebox to set the legacy boot (**RW_LEGACY** or SeaBIOS):
 
 `cd; curl -LO https://mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh`
@@ -38,6 +49,8 @@ To completely remove Linux created by chrx, it is necessary to perform a full re
 3. Press **ESC-Refresh-Power** 3-key combination to boot into recovery mode.
 
 After the verification, the recovery process will start.  This entire process will take a few minutes to complete.
+
+Note that the Developer Mode will still be enabled after this process is completed.  Press **CTRL-D** to put into ChromeOS (via Developer Mode).
 
 ### Other Useful Links:
 * [Mr.Chromebox Firmware Script](https://mrchromebox.tech/#fwscript)

@@ -30,7 +30,11 @@ After, reboot and **CTRL-L** will now successfully let you boot via legacy boot 
 
 Currently, there does not seem to be a way to successfully suspend.  Therefore, it is better to disable suspend for the time being.  Otherwise every time the Chromebook suspends and wakes-up, it goes to the ChromeOS recovery screen.
 
-### Useful links:
+### ChromeOS Recovery
+To completely remove Linux created by chrx, it is necessary to perform a full recovery as a powerwash only deletes user data.  (The parition that was created after the resize would not be affected by a powerwash.)  Google provides a Chrome Application that can be downloaded from the Chrome Web Store called [Chromebook Recovery Utility](https://chrome.google.com/webstore/detail/chromebook-recovery-utili/jndclpdbaamdhonoechobihbbiimdgai), which will be used to create the recovery media with a USB drive or SD/microSD card.  For the ASUS C213NA Chromebook, an 8GB USB drive was used to create the recovery media.
+
+
+### Other Useful Links:
 * [Mr.Chromebox Firmware Script](https://mrchromebox.tech/#fwscript)
 * [chrx](https://chrx.org/)
 * [GalliumOS Linux](https://galliumos.org/)

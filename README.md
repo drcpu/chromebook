@@ -33,6 +33,11 @@ Currently, there does not seem to be a way to successfully suspend.  Therefore, 
 ### ChromeOS Recovery
 To completely remove Linux created by chrx, it is necessary to perform a full recovery as a powerwash only deletes user data.  (The parition that was created after the resize would not be affected by a powerwash.)  Google provides a Chrome Application that can be downloaded from the Chrome Web Store called [Chromebook Recovery Utility](https://chrome.google.com/webstore/detail/chromebook-recovery-utili/jndclpdbaamdhonoechobihbbiimdgai), which will be used to create the recovery media with a USB drive or SD/microSD card.  For the ASUS C213NA Chromebook, an 8GB USB drive was used to create the recovery media.
 
+1. To perform the recovery, make sure that the Chromebook is off.
+2. Insert the recovery media (USB drive of SD/microSD card).
+3. Press **ESC-Refresh-Power** 3-key combination to boot into recovery mode.
+
+After the verification, the recovery process will start.  This entire process will take a few minutes to complete.
 
 ### Other Useful Links:
 * [Mr.Chromebox Firmware Script](https://mrchromebox.tech/#fwscript)

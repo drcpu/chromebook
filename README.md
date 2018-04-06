@@ -29,6 +29,7 @@ sh ~/Downloads/crouton
 4. Install Ubuntu with Xfce:
 ```
 sudo sh ~/Downloads/crouton -t xfce,extension,xiwi,touch
+sudo startxfce4
 ```
 
 > Other types of installation based on the UI/GUI:
@@ -80,6 +81,82 @@ To update crouton in chroot:  `croutonversion -u -d -c`
 
 To update crouton in crosh:  `sudo sh ~/Downloads/crouton -u -n chrootname`
 
+### Install Applications
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt-get install -y curl lynx mc vim wget python python-pip python-httplib2
+```
+
+Install Google Chrome Browser
+```
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update
+sudo apt-get install -y google-chrome-stable
+```
+
+Install Visual Studio Code
+```
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt-get update
+sudo apt-get install -y code
+```
+
+Install rkt to run docker containers:
+```
+sudo apt install -y iptables libnfnetlink0
+gpg --recv-key 18AD5014C99EF7E3BA5F6CE950BDD3E0FC8A365E
+wget https://github.com/rkt/rkt/releases/download/v1.29.0/rkt_1.29.0-1_amd64.deb
+wget https://github.com/rkt/rkt/releases/download/v1.29.0/rkt_1.29.0-1_amd64.deb.asc
+gpg --verify rkt_1.29.0-1_amd64.deb.asc
+sudo dpkg -i rkt_1.29.0-1_amd64.deb
+```
+
+```
+# Use container for now
+# Install Couchbase
+# curl -O http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-4-amd64.deb
+# sudo dpkg -i couchbase-release-1.0-4-amd64.deb
+# sudo apt-get update
+# sudo apt install -y couchbase-server
+# sudo iptables -I INPUT -p tcp --dport 4369 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 8091 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 8092 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 8093 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 8094 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9100 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9101 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9102 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9103 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9104 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9105 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9998 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 9999 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 11207 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 11209 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 11210 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 11211 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 11214 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 11215 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 18091 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 18092 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 18093 -j ACCEPT
+# sudo iptables -I INPUT -p tcp --dport 21100:21299 -j ACCEPT
+# sudo iptables -L
+# /opt/couchbase/bin/couchbase-server -- -noinput -detached
+# /opt/couchbase/bin/couchbase-server -k
+```
+
+
+Run Apps via Xiwi
+=================
+(from crosh)
+sudo startxiwi -b google-chrome
+sudo startxiwi -b code
 
 ## Install and Run Linux via Dual-Boot
 

@@ -151,12 +151,57 @@ sudo dpkg -i rkt_1.29.0-1_amd64.deb
 # /opt/couchbase/bin/couchbase-server -k
 ```
 
+List chroot
+```
+sudo edit-chroot -a
+```
 
-Run Apps via Xiwi
-=================
-(from crosh)
+Backup a chroot to ~/Downloads
+```
+sudo edit-chroot -b chrootname
+```
+
+Backup a chroot to an SD Card
+```
+sudo edit-chroot -f /media/removable/SD\ Card/ -b chrootname (assumes the name of your SD Card is "SD Card")
+```
+
+Backup a chroot to a USB drive
+```
+sudo edit-chroot -f /media/removable/your_path_on_drive -b chrootname
+```
+
+Restore from a backup
+```
+sudo edit-chroot -f /media/removable/your_path_on_drive -r chrootname
+sudo sh ~/Downloads/crouton -f backupTarBall.tar.gz
+```
+
+Remove chroot
+```
+sudo delete-chroot chrootname (default is xenial)
+sudo delete-chroot xenial
+```
+
+Run Couchbase Container
+```
+sudo rkt run --net=host docker://couchbase --insecure-options=image
+sudo rkt stop {UUID}
+sudo rkt rm {UUID}
+# sudo rkt run --net=host docker://hello-world --insecure-options=image
+```
+
+Bash into Container
+```
+sudo rkt enter {UUID}
+sudo rkt enter --app=couchbase {UUID}
+```
+
+Run Apps via Xiwi (from crosh)
+```
 sudo startxiwi -b google-chrome
 sudo startxiwi -b code
+```
 
 ## Install and Run Linux via Dual-Boot
 

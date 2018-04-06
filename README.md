@@ -11,9 +11,74 @@ Before you begin, please backup your data as this will wipeout your data.
 Developer Mode is required for a few of the steps outlined here (e.g., install crouton or even run chrx and Mr.Chromebox's firmware script).
 
 ## Install Crouton
-...
-...
-...
+
+1. Make the folder:
+```
+sudo mkdir /usr/local/bin
+```
+2. Download crouton and set the execution bit:
+```
+sudo curl -L -# -o ~/Downloads/crouton \
+https://github.com/dnschneid/crouton/raw/master/installer/crouton && \
+sudo chmod +x ~/Downloads/crouton
+```
+3. Setup crouton:
+```
+sh ~/Downloads/crouton
+```
+4. Install Ubuntu with Xfce:
+```
+sudo sh ~/Downloads/crouton -t xfce,extension,xiwi,touch
+```
+
+> Other types of installation based on the UI/GUI:
+>
+> If installing Xfce:
+> ```
+> sudo sh ~/Downloads/crouton -t xfce,extension,xiwi,touch
+> sudo startxfce4
+> ```
+>
+> If installing cli only:
+> ```
+> sudo sh ~/Downloads/crouton -t cli-extra,xiwi,keyboard
+> sudo enter-chroot
+> ```
+>
+> If installing LXDE:
+> ```
+> sudo sh ~/Downloads/crouton -t lxde,extension,xiwi,keyboard
+> sudo startlxde
+> ```
+>
+> If installing Gnome:
+> ```
+> sudo sh ~/Downloads/crouton -t gnome,extension,keyboard
+> sudo startgnome
+> ```
+>
+> If installing KDE:
+> ```
+> sudo sh ~/Downloads/crouton -t kde,extension,keyboard
+> sudo startkde
+> ```
+>
+> If installing Unity:
+> ```
+> sudo sh ~/Downloads/crouton -t unity,extension,keyboard
+> sudo startunity
+> ```
+>
+> If installing xiwi after:
+> ```
+> sudo sh ~/Downlods/crouton -t xiwi -u -n chrootname
+> ```
+
+### Update Crouton
+
+To update crouton in chroot:  `croutonversion -u -d -c`
+
+To update crouton in crosh:  `sudo sh ~/Downloads/crouton -u -n chrootname`
 
 
 ## Install and Run Linux via Dual-Boot
